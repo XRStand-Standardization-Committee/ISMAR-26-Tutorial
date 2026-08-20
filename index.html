@@ -174,6 +174,54 @@
             font-weight: 600;
         }
 
+        .presentations {
+            margin-top: 56px;
+            padding-top: 48px;
+            border-top: 1px solid rgba(61, 18, 9, 0.18);
+        }
+
+        .talk + .talk {
+            margin-top: 52px;
+            padding-top: 44px;
+            border-top: 1px solid rgba(61, 18, 9, 0.14);
+        }
+
+        .talk-number {
+            margin-bottom: 8px;
+            color: var(--brown);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .page-content .talk h3 {
+            margin: 0 0 12px;
+            color: var(--brown);
+            font-size: 1.35rem;
+            line-height: 1.4;
+        }
+
+        .page-content .talk h4 {
+            margin: 34px 0 16px;
+            color: var(--blue);
+            font-size: 1.08rem;
+        }
+
+        .page-content .presenter {
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        .page-content .presenter-bio {
+            margin-bottom: 22px;
+        }
+
+        .page-content .forthcoming {
+            color: #5f5f5f;
+            font-style: italic;
+        }
+
         .committee-button {
             display: inline-flex;
             align-items: center;
@@ -239,6 +287,20 @@
                 font-size: 1.4rem;
             }
 
+            .presentations {
+                margin-top: 42px;
+                padding-top: 36px;
+            }
+
+            .talk + .talk {
+                margin-top: 40px;
+                padding-top: 34px;
+            }
+
+            .page-content .talk h3 {
+                font-size: 1.18rem;
+            }
+
             .page-content p,
             .focus-areas {
                 font-size: 0.94rem;
@@ -294,6 +356,54 @@
                     <path d="M6 14 14 6M8 6h6v6"></path>
                 </svg>
             </a>
+
+            <div class="presentations" aria-labelledby="presentations-title">
+                <h2 id="presentations-title">Presentations</h2>
+
+                <article class="talk">
+                    <div class="talk-number">Talk 1</div>
+                    <h3>Towards Unified Standards for Replicable and Generalizable User Studies in Extended Reality</h3>
+                    <p class="presenter">Tim Weissker, Visual Computing Institute, RWTH Aachen University</p>
+                    <p>
+                        The number of paper submissions on XR systems and interaction techniques has risen drastically in the last years. While this positive trend reflects a growing and vibrant research community, the academic system also increasingly incentivizes the rapid publication of research findings to obtain a degree, secure funding, and get promoted. Especially for early-career researchers, this creates a tension between producing valid and reliable results for one project and moving on to the next. This carries the risk that one might, voluntarily or involuntarily, reach conclusions that are neither generalizable nor reproducible.
+                    </p>
+                    <p>
+                        In this talk, we take a closer look at the heart of decision-making in XR interaction design: the realization and evaluation of empirical user studies, where many seemingly minor design decisions can influence the overall conclusions drawn from the study. We look at selected quality criteria contributing to the reproducibility of empirical findings and interactively discuss minimum standards for future user studies to be published in the top-tier conferences of our field.
+                    </p>
+                </article>
+
+                <article class="talk">
+                    <div class="talk-number">Talk 2</div>
+                    <h3>Presentation details forthcoming</h3>
+                    <p class="presenter">Bill Sherman, National Institute of Standards and Technology, USA</p>
+                    <p class="forthcoming">Title and abstract to be announced.</p>
+                </article>
+
+                <article class="talk">
+                    <div class="talk-number">Talk 3</div>
+                    <h3>Toward Reproducible and Interoperable XR Research: Perspectives from VERA</h3>
+                    <p>
+                        XR experiments generate rich streams of behavioral and system data, but those data are typically represented, processed, and analyzed for the particular experiment that generated them. What might become possible if XR research infrastructure were designed not only to support individual experiments, but also to enable analyses that had not yet been conceived?
+                    </p>
+                    <p>
+                        Using ongoing work in the Virtual Experience Research Accelerator (VERA) as a starting point, we will explore three connected aspects of this question. We begin with pragmatic approaches to consistently representing data across XR experiments&mdash;not as proposed standards, but as a foundation for considering what consistency can enable. We then explore opportunities for creating reusable and comparable information from XR data, including standardized behavioral measures, controlled and provenance-preserving derivatives of raw data, continuous representations of sampled motion, and segmentation of experiences into meaningful and potentially comparable episodes. Such capabilities could ultimately enable new forms of analysis across participants, experiments, and studies.
+                    </p>
+                    <p>
+                        Finally, we consider how these ideas might evolve from project-specific mechanisms into shared research infrastructure. Rather than proposing a finished architecture or set of standards, we hope to identify opportunities for standardization and engage the XR community in discussing what should be common, what should remain flexible, and how shared infrastructure could support more reusable, comparable, and extensible XR research.
+                    </p>
+
+                    <h4>Presenters</h4>
+                    <p class="presenter-bio">
+                        <strong>Greg Welch, Ph.D.</strong>, is a Pegasus Professor and the AdventHealth Endowed Chair in Healthcare Simulation at the University of Central Florida, with appointments in Computer Science and the Institute for Simulation &amp; Training. A computer scientist and engineer, his research interests include human-computer interaction, human motion tracking, virtual and augmented reality, and related applications. He is the Lead PI of the NSF-supported Virtual Experience Research Accelerator (VERA), a research infrastructure project aimed at enabling large-scale, reproducible XR research. Welch is a Fellow of the IEEE and the National Academy of Inventors and a member of the IEEE VGTC Virtual Reality Academy. Welch earned his M.S. and Ph.D. in Computer Science from the University of North Carolina at Chapel Hill, and previously worked for NASA and Northrop Grumman.
+                    </p>
+                    <p class="presenter-bio">
+                        <strong>Ali Haskins, Ph.D.</strong>, is the Director of Development and Operations for the NSF-supported Virtual Experience Research Accelerator (VERA) at the University of Central Florida. Her expertise spans human-computer interaction, virtual reality, human factors, user experience and design, and human-subjects research. As VERA&rsquo;s DDO, she leads development and operations across the project&rsquo;s technical systems, research processes, policies, and community engagement. Haskins earned her B.S., M.S., and Ph.D. in Industrial &amp; Systems Engineering from Virginia Tech and has experience in academic research and teaching, user experience consulting, and research administration.
+                    </p>
+                    <p class="presenter-bio">
+                        <strong>Corey Clements</strong> is an Associate Lead Software Engineer for the NSF-supported Virtual Experience Research Accelerator (VERA) at the University of Central Florida. His work focuses on the design and development of software systems for XR research, including tools that enable researchers to build, deploy, and conduct large-scale remote experiments. Clements has been instrumental in the development and implementation of the VERA platform, with extensive contributions across its software systems, Unity integration, XR device support, and research infrastructure. He earned his B.S. and M.S. in Computer Science from UCF.
+                    </p>
+                </article>
+            </div>
         </section>
     </main>
 </body>
