@@ -180,6 +180,52 @@
             border-top: 1px solid rgba(61, 18, 9, 0.18);
         }
 
+        .schedule {
+            margin-top: 56px;
+            padding-top: 48px;
+            border-top: 1px solid rgba(61, 18, 9, 0.18);
+        }
+
+        .schedule-date {
+            margin: -8px 0 20px;
+            color: var(--brown);
+            font-weight: 600;
+        }
+
+        .schedule-table-wrap {
+            overflow-x: auto;
+        }
+
+        .schedule-table {
+            width: 100%;
+            min-width: 560px;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .schedule-table th,
+        .schedule-table td {
+            padding: 12px 16px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid rgba(61, 18, 9, 0.14);
+        }
+
+        .schedule-table th {
+            color: var(--brown);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .schedule-table td:first-child,
+        .schedule-table th:first-child {
+            white-space: nowrap;
+            color: var(--brown);
+            font-weight: 600;
+        }
+
         .talk + .talk {
             margin-top: 52px;
             padding-top: 44px;
@@ -301,6 +347,16 @@
                 font-size: 1.18rem;
             }
 
+            .schedule {
+                margin-top: 42px;
+                padding-top: 36px;
+            }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 10px 12px;
+            }
+
             .page-content p,
             .focus-areas {
                 font-size: 0.94rem;
@@ -356,6 +412,54 @@
                     <path d="M6 14 14 6M8 6h6v6"></path>
                 </svg>
             </a>
+
+            <div class="schedule" aria-labelledby="schedule-title">
+                <h2 id="schedule-title">Tentative Schedule</h2>
+                <p class="schedule-date">Monday, October 5, 2026</p>
+                <div class="schedule-table-wrap">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Time</th>
+                                <th scope="col">Session</th>
+                                <th scope="col">Presenter(s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>08:30&ndash;08:40</td>
+                                <td>Opening and Welcome</td>
+                                <td>Takeshi Kurata &amp; Jen-Shuo Liu</td>
+                            </tr>
+                            <tr>
+                                <td>08:40&ndash;08:45</td>
+                                <td>Tutorial Overview</td>
+                                <td>Jen-Shuo Liu</td>
+                            </tr>
+                            <tr>
+                                <td>08:45&ndash;09:45</td>
+                                <td>Towards Unified Standards for Replicable and Generalizable User Studies in Extended Reality</td>
+                                <td>Tim Weissker</td>
+                            </tr>
+                            <tr>
+                                <td>09:45&ndash;10:30</td>
+                                <td>Coffee Break</td>
+                                <td>&mdash;</td>
+                            </tr>
+                            <tr>
+                                <td>10:30&ndash;11:15</td>
+                                <td>API Standards for Immersive Displays</td>
+                                <td>William R. Sherman</td>
+                            </tr>
+                            <tr>
+                                <td>11:15&ndash;12:00</td>
+                                <td>Toward Reproducible and Interoperable XR Research: Perspectives from VERA</td>
+                                <td>Greg Welch, Ali Haskins, and Corey Clements</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
             <div class="presentations" aria-labelledby="presentations-title">
                 <h2 id="presentations-title">Presentations</h2>
